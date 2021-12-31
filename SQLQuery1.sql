@@ -1,0 +1,1 @@
+SELECT GETDATE() AS 'Date Test'; 
