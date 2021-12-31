@@ -1,15 +1,16 @@
 -- SIMPLE CRUD GH TEST: TODO LIST
 -- CREATE SCHEMA
 
-CREATE DATABASE TodoList; 
-
-USE TodoList; 
+CREATE DATABASE TodoList;
 GO 
 
+USE TodoList; 
+GO
+
 CREATE TABLE Tasks (
-	[Task_ID] int,
-	[Description] varchar(225), 
-	Done bit,  
+	[Task_ID] INT NOT NULL IDENTITY PRIMARY KEY,
+	[Description] VARCHAR(225) NOT NULL, 
+	Done BIT NOT NULL DEFAULT 0,  
 );
 
 
